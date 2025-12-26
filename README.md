@@ -1,5 +1,11 @@
 ﻿# CreditPathAI
-AI-Based Smart Loan Default Risk Prediction System
+
+CreditPathAI is an end-to-end machine learning project for predicting loan default risk.
+The system uses historical loan and borrower data to classify high-risk applicants and
+support better credit decision-making.
+
+The project is developed in milestones, with models and evaluation improving at each stage.
+
 
 ## Project Overview
 ...
