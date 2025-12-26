@@ -1,7 +1,10 @@
+from pyexpat import model
 import sqlite3
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import os
+import joblib
 
 from sklearn.model_selection import train_test_split
 from sklearn.ensemble import RandomForestClassifier
@@ -32,6 +35,11 @@ def train():
     # ======================
     df = load_data()
     df = engineer_features(df)
+    print("\nTarget Distribution:")
+    print(df[target].value_counts())
+    print("\nTarget Distribution (Normalized):")
+    print(df[target].value_counts(normalize=True))
+
 
     target = "Default"
 
@@ -65,6 +73,13 @@ def train():
     )
 
     model.fit(X_train, y_train)
+    # ======================
+    # Save trained model
+    # ======================
+    os.makedirs("models", exist_ok=True)
+    joblib.dump(model, "models/random_forest.pkl")
+    print("Model saved to: models/random_forest.pkl")
+
 
     # ======================
     # Predictions
