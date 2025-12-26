@@ -16,7 +16,11 @@ AI-Based Smart Loan Default Risk Prediction System
 ## Models Implemented
 - Logistic Regression
 - Random Forest
-
+### 3️⃣ XGBoost (Boosting Model)
+- Gradient boosting ensemble
+- Best performance among tested models
+- Strong recall for defaulters
+- Matches Milestone 4 requirement
 ## Model Evaluation & Comparison
 (table here)
 
