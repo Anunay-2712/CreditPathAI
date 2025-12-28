@@ -1,55 +1,61 @@
-﻿# CreditPathAI
+﻿# 📊 CreditPathAI
 
-CreditPathAI is an end-to-end machine learning project for predicting loan default risk.
-The system uses historical loan and borrower data to classify high-risk applicants and
-support better credit decision-making.
+CreditPathAI is an **end-to-end AI-powered credit risk assessment system** that predicts loan default probability and provides **actionable recommendations** for lenders.  
+The project covers the **complete machine learning lifecycle** — from data ingestion to model deployment and frontend dashboards.
 
-The project is developed in milestones, with models and evaluation improving at each stage.
+---
 
+## 🚀 Project Overview
 
-## Project Overview
-...
+Loan defaults cause significant financial losses for lending institutions.  
+CreditPathAI helps mitigate this risk by:
 
-## Business Problem
-...
+- Predicting the probability of loan default using ML models
+- Exposing predictions via a FastAPI backend
+- Visualizing risk and recommendations through a React dashboard
 
-## Dataset Description
-...
+This project is built as a **production-ready ML system**, not just a model.
 
-## Feature Engineering
-...
+---
 
-## Models Implemented
-- Logistic Regression
-- Random Forest
-### 3️⃣ XGBoost (Boosting Model)
-- Gradient boosting ensemble
-- Best performance among tested models
-- Strong recall for defaulters
-- Matches Milestone 4 requirement
-## Model Evaluation & Comparison
-(table here)
+## 🎯 Project KPIs
 
-## Key Risk Drivers
-...
+- AUC-ROC for loan default prediction
+- Precision & Recall for high-risk borrowers
+- Confusion Matrix and Threshold Analysis
+- Model inference time via FastAPI
+- Dashboard usability & recommendation clarity
 
-## Threshold Optimization
-...
+---
 
-## Project KPIs
-(your KPI bullets here)
+## 🗂️ Project Structure
 
-## How to Run
-...
-
-## Future Enhancements
-...
-
-## 🔌 API (Milestone 5)
-
-The trained Random Forest model is deployed using FastAPI.
-
-### Run API locally
-```bash
-uvicorn src.api.app:app --reload
-
+```text
+CreditPathAI/
+│
+├── data/
+│   └── loans.db
+│
+├── src/
+│   ├── features/
+│   │   └── feature_engineering.py
+│   ├── models/
+│   │   ├── train_model.py
+│   │   └── train_random_forest.py
+│   ├── recommendation/
+│   │   └── recommend.py
+│   └── api/
+│       └── app.py
+│
+├── reports/
+│   └── plots/
+│
+├── frontend/
+│   └── (React + Plotly dashboard)
+│
+├── models/
+│   └── random_forest.pkl
+│
+├── Dockerfile
+├── requirements.txt
+└── README.md
