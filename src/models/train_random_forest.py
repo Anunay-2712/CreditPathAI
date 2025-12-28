@@ -35,13 +35,14 @@ def train():
     # ======================
     df = load_data()
     df = engineer_features(df)
+    target = "Default"
     print("\nTarget Distribution:")
     print(df[target].value_counts())
     print("\nTarget Distribution (Normalized):")
     print(df[target].value_counts(normalize=True))
 
 
-    target = "Default"
+   
 
     numeric_features = [
         "Age", "Income", "LoanAmount", "CreditScore",

@@ -44,3 +44,12 @@ The project is developed in milestones, with models and evaluation improving at 
 
 ## Future Enhancements
 ...
+
+## 🔌 API (Milestone 5)
+
+The trained Random Forest model is deployed using FastAPI.
+
+### Run API locally
+```bash
+uvicorn src.api.app:app --reload
+
