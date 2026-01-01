@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 ﻿# 📊 CreditPathAI
 
 CreditPathAI is an **end-to-end AI-powered credit risk assessment system** that predicts loan default probability and provides **actionable recommendations** for lenders.  
@@ -61,6 +59,7 @@ CreditPathAI/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
+
 =======
 ﻿# 📊 CreditPathAI
 
@@ -123,8 +122,6 @@ CreditPathAI/
 ├── Dockerfile
 ├── requirements.txt
 └── README.md
->>>>>>> 3638164afb8093a2d01d3ca79a26708dd317a007
-=======
 # \# CreditPathAI
 
 # AI-based Smart Loan Recovery System
@@ -135,6 +132,3 @@ CreditPathAI/
 
 # Workflow: Data ingestion → Feature engineering → Model training → Recommendation engine → API → Dashboard.
 
-
-
->>>>>>> upstream/main
